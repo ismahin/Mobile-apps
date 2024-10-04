@@ -84,7 +84,7 @@ const DiseaseClassification = () => {
 
       console.log('Submitting Image:', selectedImage);
 
-      const response = await fetch('http://192.168.0.129:8000/api/analyze', {
+      const response = await fetch('http://192.168.191.237:8000/api/analyze', {
         method: 'POST',
         body: formData,
       });

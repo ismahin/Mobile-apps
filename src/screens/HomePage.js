@@ -103,21 +103,24 @@ const HomeScreen = () => {
 
         {/* Services Section */}
         <View style={styles.solutionsContainer}>
-          <TouchableOpacity style={styles.solutionCard}>
+          <TouchableOpacity
+            style={styles.solutionCard}
+            onPress={() => navigation.navigate("WaterResourceScreen")}
+          >
             <Image
               source={require("../../assets/images/water_resource_icon.png")}
               style={styles.solutionIcon}
             />
             <Text style={styles.solutionText}>Water Resource</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.solutionCard}>
+          <TouchableOpacity style={styles.solutionCard}onPress={() => navigation.navigate('SoilQualityTesting')}>
             <Image
               source={require("../../assets/images/soil_quality_testing_icon.png")}
               style={styles.solutionIcon}
             />
             <Text style={styles.solutionText}>Soil Quality Testing</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.solutionCard}>
+          <TouchableOpacity style={styles.solutionCard}onPress={() => navigation.navigate('CropSuggestionScreen')}>
             <Image
               source={require("../../assets/images/crop_suggestion_icon.png")}
               style={styles.solutionIcon}
